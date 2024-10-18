@@ -38,8 +38,7 @@ export const submitVacationRequest = async (id, updatedRequest) => {
             console.warn('Error updating vacation request');
         }
 
-        const updatedData = await response.json();
-        return updatedData;
+        return await response.json();
     } catch (error) {
         console.error('Error updating vacation request:', error);
         return "";
