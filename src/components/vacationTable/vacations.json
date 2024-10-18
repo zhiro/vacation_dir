@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "name": "Mike Monday",
+    "start": "2024-10-01",
+    "end": "2024-10-14",
+    "days": 14,
+    "comment": "2 week vacay"
+  },
+  {
+    "id": 2,
+    "userId": 1,
+    "name": "Mike Monday",
+    "start": "2024-07-17",
+    "end": "2024-07-23",
+    "days":7,
+    "comment": "midsommer"
+  },
+  {
+    "id": 3,
+    "userId": 2,
+    "name": "Tim Tuesday",
+    "start": "2024-09-02",
+    "end": "2024-09-11",
+    "days": 10,
+    "comment": "school starts"
+  },
+  {
+    "id": 4,
+    "userId": 6,
+    "name": "Sam Saturday",
+    "start": "2024-10-28",
+    "end": "2024-11-01",
+    "days": 5,
+    "comment": "halloween"
+  },
+  {
+    "id": 5,
+    "userId": 2,
+    "name": "Tim Tuesday",
+    "start": "2024-01-01",
+    "end": "2024-01-05",
+    "days": 5,
+    "comment": ""
+  }
+]

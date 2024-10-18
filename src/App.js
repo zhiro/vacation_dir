@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import VacationTable from "./components/vacationTable/vacationTable"
+import SingleViewVacationTable from "./components/singleViewVacationTable/singleViewVacationTable";
+import SubmitVacationRequest from "./components/submitVacationRequest/submitVacationRequest";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
+const App = () => (
+        <div className="App">
+          <Router>
+            <Routes>
+              <Route path="/" element={<VacationTable/>} />
+              <Route path="/submit-request" element={<SubmitVacationRequest/>} />
+              <Route path="/view-user-requests/:userId" element={<SingleViewVacationTable />} />
+              <Route path="/view-user-requests/submit-request/:userId" element={<SubmitVacationRequest />} />
+            </Routes>
+          </Router>
+        </div>
+    )
+;
 export default App;
